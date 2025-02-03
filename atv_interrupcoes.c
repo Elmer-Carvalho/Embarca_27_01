@@ -155,7 +155,7 @@ void button_irq_callback(uint gpio, uint32_t events) {
         uint32_t current_time = to_us_since_boot(get_absolute_time());
 
         // Debouncing
-        if (current_time - temp_button> 150000) 
+        if (current_time - temp_button> 250000) 
         {
             temp_button = current_time;
 
